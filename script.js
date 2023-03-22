@@ -70,5 +70,4 @@ btns.forEach((btn, i) => {
         sliderNav(i);
     });
 });
-
-
+// code written by Anouar El Kihal (eabug) //
