@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 20px #000;
+    transition: background-color 0.5s ease;
+}
+
+label.logo a {
+    color: #000;
+    font-size: 25px;
+    line-height: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+label.logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+label.logo img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+label.logo a:hover {
+    background-color: transparent;
+    transition: 0s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#home video {
+    opacity: 0.7;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    z-index: -1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 25px;
+}
+
+#chisono {
+    height: fit-content;
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img {
+    height: 550px;
+    width: 420px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-text h1 {
+    color: black;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.about-text button {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.about-text button:hover {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+#ambienti {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#ambienti h1 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#ambienti video {
+    position: absolute; 
+    opacity: 0.8;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+#prodotti {
+    height: fit-content;
+    width: 100%;
+}
+
+.container-images {
+    display: flex;
+    padding: 35px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper, .wrapper2 {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i, .wrapper2 i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active, .wrapper2 i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover, .wrapper2 i:hover {
+    background: #414141;
+}
+
+.wrapper i:first-child, .wrapper2 i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child, .wrapper2 i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel, .wrapper2 .carousel2 {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging, .carousel2.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img, .carousel2.dragging img, .carousel.dragging video, .carousel2.dragging video {
+    pointer-events: none;
+}
+
+.carousel img, .carousel2 img, .carousel video, .carousel2 video {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+.carousel img:first-child, .carousel2 img:first-child, .carousel video:first-child, .carousel2 video:first-child {
+    margin-left: 0px;
+}
+
+.title.second {
+    padding-top: 40px;
+}
+
+.container-images.second {
+    padding-bottom: 150px;
+}
+
+#contatti {
+    line-height: 1.5;
+    height: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./immagini/ambienti/foto12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-bg {
+    height: fit-content;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-bg h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 10px;
+    letter-spacing: 4px;
+    margin-top: 120px;
+}
+
+.contact-bg p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.line div {
+    margin: 0 0.2rem;
+}
+
+.line div:nth-child(1), .line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.text {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact-bg .text {
+    margin: 1.6rem 0;
+}
+
+.contact-body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.contact-info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span .fa-solid, .contact-info span .fa-brands {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: white;
+}
+
+.contact-info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.instaLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.instaLink:hover {
+    opacity: 0.7;
+}
+
+.instaLink:active {
+    opacity: 0.5;
+}
+
+.googlemaps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.googlemaps iframe {
+    border-radius: 30px;
+}
+
+.footerWDM {
+    height: fit-content;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footerWDM img {
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text h1 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    label.logo a {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img, .carousel2 img, .carousel video, .carousel2 video {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-text p {
+        font-size: 15px;
+    }
+    .about-text h5 {
+        font-size: 20px;
+    }
+    .about-text h1 {
+        font-size: 50px;
+    }
+    .about-text {
+        width: fit-content;
+        height: fit-content;
+    }
+    .main img {
+        width: auto;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img, .carousel2 img, .carousel video, .carousel2 video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #emailSpan {
+        font-size: 13px;
+    }
+}
+
+
+
+
